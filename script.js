@@ -20,11 +20,11 @@ let userIsBlocked = false;
 let goToPage = "";
 
 //if (userAge >= 18 && userNameLength === true && userName === "tom") 
-if (userAge >= 18 && userName === "tom" && userIsBlocked === false)
+if (userAge >= 18 && userName === "Tom" && userIsBlocked === false)
    {
    
-     goToPage = "/home";
-     userIsLoggedIn = true;
+    goToPage = "/home";
+    userIsLoggedIn = true;
     if (userIsAdmin) {
         goToPage = "/admin";
 }
