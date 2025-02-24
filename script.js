@@ -24,13 +24,18 @@ if (userAge >= 18 && userNameLength === true && userName === "tom")
    
      goToPage = "/home";
      userIsLoggedIn = true;
+
+     goToPage = "/admin";
      console.log(goToPage);
-     console.log(userName, userAge, userIsBlocked, userIsLoggedIn,);
+     console.log("Name:",userName, "Age:",userAge, "Blocked:",userIsBlocked, "LoggedIn:",userIsLoggedIn,);
     }
 else
 {
-   
-    console.log("error: ",userName, userAge, userIsBlocked, userIsLoggedIn);
-    console.log(goToPage)
+   userIsAdmin = false;
+   goToPage = "/home";
+    //console.log("error: ",userName, userAge, userIsBlocked, userIsLoggedIn);
+    console.log(goToPage);
+    console.log("Error! ","Name:",userName, "Age:",userAge, "Blocked:",userIsBlocked, "LoggedIn:",userIsLoggedIn,);
+    
 }
 
