@@ -1,6 +1,6 @@
 //conditionals oppgave
  
-const userName = "tom";
+const userName = "Tom";
 
 let userNameLength = userName.length;
 const userAge = 18;
@@ -19,13 +19,16 @@ let userIsBlocked = false;
  
 let goToPage = "";
 
-if (userAge >= 18 && userNameLength === true && userName === "tom") 
+//if (userAge >= 18 && userNameLength === true && userName === "tom") 
+if (userAge >= 18 && userName === "tom" && userIsBlocked === false)
    {
    
      goToPage = "/home";
      userIsLoggedIn = true;
-
-     goToPage = "/admin";
+    if (userIsAdmin) {
+        goToPage = "/admin";
+}
+     
      console.log(goToPage);
      console.log("Name:",userName, "Age:",userAge, "Blocked:",userIsBlocked, "LoggedIn:",userIsLoggedIn,);
     }
