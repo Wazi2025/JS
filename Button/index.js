@@ -3,9 +3,9 @@ let CountEl = document.getElementById("count-el")
 
 let img = document.createElement("img");
 
-let picURL = "gfx/sal.png";
 const picSAL = "gfx/sal.png";
 const picSalute = "gfx/Salute.jpg";
+let picURL = picSAL;
 
 function increment() {
     count = count + 1
@@ -14,8 +14,7 @@ function increment() {
     CountEl.innerText = count
 
         
-    showImage();
-    
+   showImage();
 }
 
 function showImage() {
@@ -26,11 +25,13 @@ function showImage() {
     } else {
         picURL = picSAL;
     }
-
-    img.src = picURL;
-
+    
     document.body.appendChild(img);
-    console.log(picURL);    
+    img.src = picURL; //switch URL's
+
+    console.log(picURL);  
+    console.log(document.body.childNodes);
+
 }
 
 
