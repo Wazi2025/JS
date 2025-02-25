@@ -5,13 +5,13 @@ const userName = "Tom";
 let userNameLength = userName.length;
 const userAge = 18;
 
- if (userNameLength >= 1) {
+ /*if (userNameLength >= 1) {
     console.log("Username is valid");
     userNameLength = true;
  } else {
     console.log("Username is not valid");
     userNameLength = false;
-}
+}*/
 
 let userIsAdmin = true;
 let userIsLoggedIn = false;
