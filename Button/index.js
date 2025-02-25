@@ -14,11 +14,11 @@ function increment() {
     CountEl.innerText = count
 
         
-    showImage(img);
-
+    showImage();
+    
 }
 
-function showImage(img) {
+function showImage() {
 
     //switches between the two images when button is clicked
     if (picURL == picSAL) {
@@ -30,8 +30,7 @@ function showImage(img) {
     img.src = picURL;
 
     document.body.appendChild(img);
-    console.log(picURL);
-    document.replaceChild
+    console.log(picURL);    
 }
 
 
