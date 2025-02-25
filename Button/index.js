@@ -26,8 +26,9 @@ function showImage() {
         picURL = picSAL;
     }
     
-    document.body.appendChild(img);
     img.src = picURL; //switch URL's
+    document.body.appendChild(img);
+    
 
     console.log(picURL);  
     console.log(document.body.childNodes);
