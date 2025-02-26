@@ -1,20 +1,37 @@
 let count = 0
 let CountEl = document.getElementById("count-el")
+let SaveEl = document.getElementById("save-el");
 
+//test examples
+let WelcomeEl = document.getElementById("welcome-el")
+let username = "Jan";
+let message = "You have three new notifications, ";
+let messageToUser = message + ", "+username + "!";
+console.log(messageToUser);
+
+WelcomeEl.innerText = message + username;
+WelcomeEl.innerText += " :-)"
+//test examples
+
+//image swap test
 let img = document.createElement("img");
-
 const picSAL = "gfx/sal.png";
 const picSalute = "gfx/Salute.jpg";
 let picURL = picSAL;
+//image swap test
 
 function increment() {
-    count = count + 1
+    count += 1;
 
     console.log(count)
     CountEl.innerText = count
 
         
-   showImage();
+   //showImage();
+}
+
+function save(){
+    console.log(count);
 }
 
 function showImage() {
