@@ -24,11 +24,19 @@ h2 {
     text-align: center;
 } 
 
-.buttons{
+button{
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-top: 10px;
-        margin-bottom: 10;
-        text-align: center;
+        margin-bottom: 10px;
+        
+        border-radius: 10px;        
 }
+
+.buttons{
+    text-align: center;
+}
+
 .prevEntries {
         margin-top: 20px;
         margin-bottom: 10;
